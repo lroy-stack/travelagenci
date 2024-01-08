@@ -1,0 +1,32 @@
+/* archivo: styles.css */
+
+/* Clase personalizada para animación de entrada */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicar la animación a la clase */
+  .slide-in-left {
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  }
+  
+  /* Clase personalizada para animación de entrada */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Aplicar la animación a la clase */
+  .fade-in {
+    animation: 0.5s ease-out 0s 1 fadeIn;
+  }
+  
+  /* Puedes añadir más animaciones y estilos personalizados según sea necesario */
+  
