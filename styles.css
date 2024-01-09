@@ -29,4 +29,14 @@
   }
   
   /* Puedes añadir más animaciones y estilos personalizados según sea necesario */
-  
+  /* Agregar a tu archivo CSS */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

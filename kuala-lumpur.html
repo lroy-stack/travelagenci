@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,190 +6,193 @@
     <title>Kuala Lumpur Getaway - Information</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <!-- Encabezado -->
-    <header class="bg-white px-4 py-3 flex justify-between items-center shadow-md">
-        <img src="realroads.png" alt="Real Roads Travel logo" class="h-8">
-        <nav>
-            <ul class="flex space-x-4">
-                <li><a href="index.html#packages" class="text-gray-600 hover:text-gray-900">Packages</a></li>
-                <li><a href="index.html#about" class="text-gray-600 hover:text-gray-900">About</a></li>
-                <li><a href="index.html#contact" class="text-gray-600 hover:text-gray-900">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="index.html#packages" class="bg-blue-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-blue-700">Explore</a>
-
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <img src="realroads.png" alt="Real Roads Travel logo" class="h-8">
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html#packages" class="text-gray-600 hover:text-gray-900">Packages</a></li>
+                    <li><a href="index.html#about" class="text-gray-600 hover:text-gray-900">About</a></li>
+                    <li><a href="index.html#contact" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="index.html#packages" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">Explore</a>
+        </div>
     </header>
 
-    <!-- Paquete de Kuala Lumpur -->
     <div class="container mx-auto mt-10 p-4 bg-white rounded-lg shadow-lg">
-        <h2 class="text-4xl font-bold text-center text-gray-800 mb-6">Kuala Lumpur Getaway</h2>
-        <div class="flex flex-col lg:flex-row justify-between items-center">
+        <div class="flex flex-col lg:flex-row items-center">
             <!-- Imagen -->
-            <img src="kualalumpur.png" alt="Kuala Lumpur" class="w-full lg:w-1/3 h-auto object-cover mb-4 lg:mb-0">
+            <img src="kualalumpur.png" alt="Kuala Lumpur" class="w-full lg:w-1/2 h-auto object-cover mb-4 lg:mb-0">
             
-            <div class="lg:w-2/3 lg:pl-6">
+            <div class="lg:w-1/2 lg:pl-6">
                 <!-- Descripción -->
                 <p class="text-gray-600 text-lg mb-4">Explore the vibrant streets of Kuala Lumpur for two weeks with our all-inclusive package. Enjoy comfortable accommodation, guided tours, and unforgettable experiences in this amazing city.</p>
                 
-                <!-- Desglose del paquete -->
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Package Includes:</h3>
-                    <ul class="list-disc list-inside text-gray-600 pl-4">
-                        <li>Round-trip flights</li>
-                        <li>Accommodation in a local Hostel</li>
-                        <li>Guided city tours</li>
-                        <li>Excursions to iconic landmarks</li>
-                        <li>Cultural experiences</li>
-                        <li>Meals included</li>
-                        <li>Transportation within the city</li>
-                    </ul>
-                </div>
-                
-                <!-- Precio por persona -->
-                <p class="text-gray-800 font-bold text-lg">Starting at €1500 per person</p>
-                
-                <!-- Botón de reserva -->
-                <a href="kuala-lumpur.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-blue-700 transition-colors duration-300 mt-4">Reservar Ahora</a>
-                
-                <!-- Botón de llamada de acción -->
-                <a href="tel:+123456789" class="inline-block bg-green-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-green-700 transition-colors duration-300 mt-2">Llamar Ahora</a>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Paquete Básico -->
+                    <div class="bg-blue-100 p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800">Paquete Básico</h3>
+                        <p class="text-lg mb-4">Explora las vibrantes calles de Kuala Lumpur durante dos semanas con nuestro paquete todo incluido. Disfruta de un alojamiento cómodo, recorridos guiados y experiencias inolvidables en esta increíble ciudad.</p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Incluye:</h3>
+                            <ul class="list-disc list-inside text-gray-600 pl-4">
+                                <li>Transporte de ida y vuelta</li>
+                                <li>Alojamiento en un albergue local</li>
+                                <li>Recorridos por la ciudad con guía</li>
+                                <li>Excursiones a lugares emblemáticos</li>
+                                <li>Experiencias culturales</li>
+                                <li>Comidas incluidas</li>
+                                <li>Transporte dentro de la ciudad</li>
+                            </ul>
+                        </div>
+                        <p class="text-2xl text-blue-600 font-bold">Desde 1500€ por persona</p>
+                        <a href="kuala-lumpur.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-blue-700 transition-colors duration-300 mt-4">Reservar Ahora</a>
+                        <a href="tel:+123456789" class="inline-block bg-green-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-green-700 transition-colors duration-300 mt-2">Llamar Ahora</a>
+                    </div>
+                    
+                    <!-- Paquete Tradicional -->
+                    <div class="bg-blue-100 p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800">Paquete Tradicional</h3>
+                        <p class="text-lg mb-4">Sumérgete en la rica cultura de Kuala Lumpur con nuestro paquete tradicional malasio. Hospédate en una casa tradicional malasia, explora la ciudad con guías conocedores y saborea la auténtica cocina.</p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Incluye:</h3>
+                            <ul class="list-disc list-inside text-gray-600 pl-4">
+                                <li>Transporte de ida y vuelta</li>
+                                <li>Alojamiento en casa tradicional malasia</li>
+                                <li>Recorridos culturales con guía</li>
+                                <li>Experiencias culinarias</li>
+                                <li>Comidas caseras incluidas</li>
+                                <li>Transporte local</li>
+                            </ul>
+                        </div>
+                        <p class="text-2xl text-blue-600 font-bold">Desde 1770€ por persona</p>
+                        <a href="kuala-lumpur.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-blue-700 transition-colors duration-300 mt-4">Reservar Ahora</a>
+                        <a href="tel:+123456789" class="inline-block bg-green-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-green-700 transition-colors duration-300 mt-2">Llamar Ahora</a>
+                    </div>
+                    
+                    <!-- Paquete Negocios -->
+                    <div class="bg-blue-100 p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800">Paquete Negocios</h3>
+                        <p class="text-lg mb-4">Combina negocios y ocio con nuestro paquete orientado a los negocios. Hospédate en un hotel de negocios, asiste a reuniones y conferencias y explora la ciudad durante tu tiempo libre.</p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Incluye:</h3>
+                            <ul class="list-disc list-inside text-gray-600 pl-4">
+                                <li>Transporte de ida y vuelta</li>
+                                <li>Alojamiento en hotel de negocios</li>
+                                <li>Acceso a instalaciones para conferencias</li>
+                                <li>Comidas en el lugar</li>
+                                <li>Servicio de transporte al aeropuerto</li>
+                                <li>Exploración de la ciudad</li>
+                            </ul>
+                        </div>
+                        <p class="text-2xl text-blue-600 font-bold">Desde 2250€ por persona</p>
+                        <a href="kuala-lumpur.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-blue-700 transition-colors duration-300 mt-4">Reservar Ahora</a>
+                        <a href="tel:+123456789" class="inline-block bg-green-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-green-700 transition-colors duration-300 mt-2">Llamar Ahora</a>
+                    </div>
+
+                    <!-- Paquete Lujo -->
+                    <div class="bg-blue-100 p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800">Paquete Lujo</h3>
+                        <p class="text-lg mb-4">Explora las vibrantes calles de Kuala Lumpur durante dos semanas con nuestro paquete de lujo todo incluido. Hospédate en un espacioso apartamento de lujo, disfruta de recorridos guiados premium y vive lo mejor de la ciudad.</p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Incluye:</h3>
+                            <ul class="list-disc list-inside text-gray-600 pl-4">
+                                <li>Transporte de ida y vuelta</li>
+                                <li>Alojamiento en apartamento de lujo</li>
+                                <li>Recorridos premium con guía</li>
+                                <li>Experiencias exclusivas</li>
+                                <li>Comidas de lujo incluidas</li>
+                                <li>Transporte privado en la ciudad</li>
+                            </ul>
+                        </div>
+                        <p class="text-2xl text-blue-600 font-bold">Desde 2500€ por persona</p>
+                        <a href="kuala-lumpur.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-blue-700 transition-colors duration-300 mt-4">Reservar Ahora</a>
+                        <a href="tel:+123456789" class="inline-block bg-green-600 text-white px-6 py-2 rounded-md shadow-lg hover:bg-green-700 transition-colors duration-300 mt-2">Llamar Ahora</a>
+                    </div>
+                </div>                
             </div>
         </div>
     </div>
+    
 
     <!-- Contenido Principal -->
     <main>
-       <!-- Itinerary Section -->
-<section id="itinerary" class="container mx-auto mt-10 p-4 bg-gray-100 rounded-lg shadow-lg">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Itinerary</h2>
-
-    <!-- Timeline Container -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <!-- Timeline -->
-        <div class="relative pb-12">
-            <!-- Day 1 -->
-            <div class="p-6 border-l-4 border-blue-500">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 1: Arrival and Welcome</h3>
-                <p class="text-gray-600">Get settled in your accommodation and join us for a warm welcome to Kuala Lumpur.</p>
+        <section id="itinerary" class="container mx-auto mt-10 p-4 bg-gray-100 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Itinerary</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Mapa Ilustrado -->
+                <div class="flex-1 relative">
+                    <img src="kualalumpur-travel.png" alt="Mapa de Kuala Lumpur" class="rounded-lg shadow-md">
+                    
+                    <!-- Día 1 -->
+                    <div class="tooltip" style="position: absolute; top: 11%; left: 54%;">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
+                        <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
+                            Día 1: Llegada y Bienvenida
+                        </span>
+                    </div>
+                    
+                    <!-- Día 2-3 -->
+                    <div class="tooltip" style="position: absolute; top: 16%; left: 79%;">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
+                        <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
+                            Día 2-3: Destacados de la Ciudad
+                        </span>
+                    </div>
+                    
+                    <!-- Día 4-5 -->
+                    <div class="tooltip" style="position: absolute; top: 30%; left: 35%;">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
+                        <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
+                            Día 4-5: Inmersión Cultural
+                        </span>
+                    </div>
+                    
+                    <!-- Día 6-7 -->
+                    <div class="tooltip" style="position: absolute; top: 73%; left: 67%;">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
+                        <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
+                            Día 6-7: Maravillas Naturales
+                        </span>
+                    </div>
+                    
+                    <!-- Día 8-12 -->
+                    <div class="tooltip" style="position: absolute; top: 50%; left: 55%;">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
+                        <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
+                            Día 8-12: Ocio y Exploración
+                        </span>
+                    </div>
+                    
+                    <!-- Día 13 -->
+                    <div class="tooltip" style="position: absolute; top: 62%; left: 19.5%;">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
+                        <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
+                            Día 13: Despedida
+                        </span>
+                    </div>
+                    
+                    <!-- Día 14 -->
+                    <div class="tooltip" style="position: absolute; top: 72%; left: 37%;">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
+                        <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
+                            Día 14: Salida
+                        </span>
+                    </div>
+                </div>
             </div>
-
-            <!-- Day 2-3 -->
-            <div class="p-6 border-l-4 border-blue-500">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 2-3: City Highlights</h3>
-                <p class="text-gray-600">Explore the iconic landmarks of Kuala Lumpur, including the Petronas Towers and Merdeka Square.</p>
-            </div>
-
-            <!-- Day 4-5 -->
-            <div class="p-6 border-l-4 border-blue-500">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 4-5: Cultural Immersion</h3>
-                <p class="text-gray-600">Immerse yourself in the rich culture of Kuala Lumpur with visits to cultural sites and local experiences.</p>
-            </div>
-
-            <!-- Day 6-7 -->
-            <div class="p-6 border-l-4 border-blue-500">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 6-7: Natural Wonders</h3>
-                <p class="text-gray-600">Discover the natural beauty of Kuala Lumpur with excursions to lush rainforests and serene gardens.</p>
-            </div>
-
-            <!-- Day 8-12 -->
-            <div class="p-6 border-l-4 border-blue-500">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 8-12: Leisure and Exploration</h3>
-                <p class="text-gray-600">Enjoy leisure days to explore the city at your own pace, shop, and try local cuisine.</p>
-            </div>
-
-            <!-- Day 13 -->
-            <div class="p-6 border-l-4 border-blue-500">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 13: Farewell</h3>
-                <p class="text-gray-600">Bid farewell to Kuala Lumpur with wonderful memories and new friends.</p>
-            </div>
-
-            <!-- Day 14 -->
-            <div class="p-6 border-l-4 border-blue-500">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 14: Departure</h3>
-                <p class="text-gray-600">Check out from your accommodation and depart from Kuala Lumpur.</p>
-            </div>
-
-            <!-- Connector Line -->
-            <div class="absolute inset-0 flex items-center" aria-hidden="true">
-                <div class="w-1/5 mx-auto bg-blue-500 rounded-full h-0.5"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-       <!-- Sección de Opciones de Alojamiento -->
-<section id="accommodation" class="container mx-auto mt-10 p-4 bg-gray-100 rounded-lg shadow-lg">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Accommodation Options</h2>
-
-    <!-- Grid de Opciones de Alojamiento -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        </section>
         
-        <!-- Hotel de 5 Estrellas -->
-        <div class="bg-blue-100 p-6 rounded-lg">
-            <h3 class="text-2xl font-semibold text-gray-800">5-Star Hotel</h3>
-            <p class="text-lg mb-4">Features: Stay in a luxurious 5-star hotel in the heart of Kuala Lumpur. Spacious and elegant rooms with high-end amenities.</p>
-            <p class="text-lg mb-4">Amenities: Pool, gym, spa, 24-hour room service, minibar, cable TV, high-speed Wi-Fi access.</p>
-            <p class="text-lg mb-4">Location: Located in Kuala Lumpur's central business district, close to major attractions like the Petronas Towers and luxury shopping.</p>
-            <p class="text-2xl text-blue-600 font-bold">€1490</p>
-            <input type="radio" name="accommodation" value="5-star-hotel">
-        </div>
         
-        <!-- Hostal Boutique -->
-        <div class="bg-blue-100 p-6 rounded-lg">
-            <h3 class="text-2xl font-semibold text-gray-800">Boutique Hostel</h3>
-            <p class="text-lg mb-4">Features: Stay in a charming boutique hostel with a cozy atmosphere and modern design.</p>
-            <p class="text-lg mb-4">Amenities: Uniquely designed rooms, common areas for socializing, shared kitchen, complimentary breakfast, free Wi-Fi access.</p>
-            <p class="text-lg mb-4">Location: Located in a picturesque area of Kuala Lumpur, close to local cafes and markets.</p>
-            <p class="text-2xl text-blue-600 font-bold">€500</p>
-            <input type="radio" name="accommodation" value="boutique-hostel">
-        </div>
         
-       <!-- Apartamento de Lujo -->
-<div class="bg-blue-100 p-6 rounded-lg">
-    <h3 class="text-2xl font-semibold text-gray-800">Luxury Apartment</h3>
-    <p class="text-lg mb-4">Features: Stay in a spacious luxury apartment with a living room, full kitchen, and dining area.</p>
-    <p class="text-lg mb-4">Amenities: Fully equipped kitchen, washer and dryer, balcony with views, daily cleaning service, access to pool and gym.</p>
-    <p class="text-lg mb-4">Location: Located in an exclusive residential area of Kuala Lumpur, ideal for an extended and comfortable stay.</p>
-    <p class="text-2xl text-blue-600 font-bold">€800</p>
-    <input type="radio" name="accommodation" value="luxury-apartment">
-</div>
-
-      <!-- Alojamiento Tradicional Malasio -->
-<div class="bg-blue-100 p-6 rounded-lg">
-    <h3 class="text-2xl font-semibold text-gray-800">Traditional Malaysian Accommodation</h3>
-    <p class="text-lg mb-4">Features: Stay in a traditional Malaysian house, offering an authentic experience.</p>
-    <p class="text-lg mb-4">Amenities: Rooms with traditional decoration, homemade breakfast included, opportunity to interact with the host family.</p>
-    <p class="text-lg mb-4">Location: In a local community on the outskirts of Kuala Lumpur, allowing for a unique cultural immersion.</p>
-    <p class="text-2xl text-blue-600 font-bold">€370</p>
-    <input type="radio" name="accommodation" value="traditional-malaysian-accommodation">
-</div>
-
-       <!-- Hotel de Negocios -->
-<div class="bg-blue-100 p-6 rounded-lg">
-    <h3 class="text-2xl font-semibold text-gray-800">Business Hotel</h3>
-    <p class="text-lg mb-4">Features: Stay in a business-oriented hotel with conference and meeting facilities.</p>
-    <p class="text-lg mb-4">Amenities: Business center, meeting rooms, high-speed Wi-Fi access, on-site restaurant, airport shuttle service.</p>
-    <p class="text-lg mb-4">Location: Strategically located in the city center, facilitating business activities.</p>
-    <p class="text-2xl text-blue-600 font-bold">€750</p>
-    <input type="radio" name="accommodation" value="business-hotel">
-</div>
-
         
-        <!-- Hostel -->
-        <div class="bg-blue-100 p-6 rounded-lg">
-            <h3 class="text-2xl font-semibold text-gray-800">Hostel</h3>
-            <p class="text-lg mb-4">Features: Stay in a hostel with a young and lively atmosphere, ideal for travelers looking for a social and budget-friendly experience.</p>
-            <p class="text-lg mb-4">Amenities: Shared bunk bed rooms, common areas for socializing, shared kitchen where you can prepare your meals, group activities organized by the hostel.</p>
-            <p class="text-lg mb-4">Location: Strategically located in a central area of Kuala Lumpur, making it easy to access the city's main attractions, restaurants, and nightlife.</p>
-            <p class="text-2xl text-blue-600 font-bold">€250</p>
-            <input type="radio" name="accommodation" value="hostel">
-        </div>
-        
-    </div>
-</section>
 
 
+       
 
        <!-- Included Excursions Section -->
 <section id="excursions" class="container mx-auto mt-10 p-4 bg-gray-100 rounded-lg shadow-lg">
@@ -353,22 +357,24 @@
 
     </main>
 
-    <!-- Pie de Página -->
-    <footer class="bg-gray-900 text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <p>&copy; 2024 Real Roads Travel</p>
-            <a href="javascript:void(0);" onclick="scrollToTop();" class="text-blue-500 hover:underline">Volver al Inicio</a>
-        </div>
-    </footer>
-    
-    <script>
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
-    </script>
-    
+   <!-- Footer -->
+   <footer class="bg-gray-900 text-white py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <p>&copy; 2024 Real Roads Travel</p>
+        <a href="#" class="text-blue-500 hover:underline">Back to Top</a>
+    </div>
+</footer>
+
+<!-- JavaScript for Smooth Scrolling -->
+<script>
+    document.querySelector('footer a').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
+<script src="itinerary.js"></script>
+
+
 </body>
 </html>
+
