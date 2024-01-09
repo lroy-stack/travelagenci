@@ -129,7 +129,7 @@
                     <img src="kualalumpur-travel.png" alt="Mapa de Kuala Lumpur" class="rounded-lg shadow-md">
                     
                     <!-- Día 1 -->
-                    <div class="tooltip" style="position: absolute; top: 11%; left: 54%;">
+                    <div class="tooltip" data-day="day1" style="position: absolute; top: 11%; left: 54%;">
                         <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
                         <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
                             Día 1: Llegada y Bienvenida
@@ -137,7 +137,7 @@
                     </div>
                     
                     <!-- Día 2-3 -->
-                    <div class="tooltip" style="position: absolute; top: 16%; left: 79%;">
+                    <div class="tooltip" data-day="day2" style="position: absolute; top: 16%; left: 79%;">
                         <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
                         <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
                             Día 2-3: Destacados de la Ciudad
@@ -145,7 +145,7 @@
                     </div>
                     
                     <!-- Día 4-5 -->
-                    <div class="tooltip" style="position: absolute; top: 30%; left: 35%;">
+                    <div class="tooltip" data-day="day4" style="position: absolute; top: 30%; left: 35%;">
                         <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
                         <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
                             Día 4-5: Inmersión Cultural
@@ -153,7 +153,7 @@
                     </div>
                     
                     <!-- Día 6-7 -->
-                    <div class="tooltip" style="position: absolute; top: 73%; left: 67%;">
+                    <div class="tooltip" data-day="day6" style="position: absolute; top: 73%; left: 67%;">
                         <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
                         <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
                             Día 6-7: Maravillas Naturales
@@ -161,7 +161,7 @@
                     </div>
                     
                     <!-- Día 8-12 -->
-                    <div class="tooltip" style="position: absolute; top: 50%; left: 55%;">
+                    <div class="tooltip" data-day="day8" style="position: absolute; top: 50%; left: 55%;">
                         <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
                         <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
                             Día 8-12: Ocio y Exploración
@@ -169,7 +169,7 @@
                     </div>
                     
                     <!-- Día 13 -->
-                    <div class="tooltip" style="position: absolute; top: 62%; left: 19.5%;">
+                    <div class="tooltip" data-day="day13" style="position: absolute; top: 62%; left: 19.5%;">
                         <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
                         <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
                             Día 13: Despedida
@@ -177,15 +177,57 @@
                     </div>
                     
                     <!-- Día 14 -->
-                    <div class="tooltip" style="position: absolute; top: 72%; left: 37%;">
+                    <div class="tooltip" data-day="day14" style="position: absolute; top: 72%; left: 37%;">
                         <div class="w-4 h-4 bg-blue-500 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"></div>
                         <span class="tooltiptext bg-white text-gray-800 p-2 rounded-lg shadow-md" style="position: absolute; visibility: hidden; width: 150px; bottom: 125%; left: 50%; margin-left: -75px; text-align: center;">
                             Día 14: Salida
                         </span>
                     </div>
                 </div>
+
+             <!-- Desglose Detallado de Actividades Diarias -->
+        <div class="flex-1 ml-4">
+            <div class="day-details bg-white p-6 rounded-lg shadow-lg mb-4 day" id="day1">
+                <h3 class="text-2xl font-bold text-gray-800">Day 1: Arrival and Welcome</h3>
+                <p class="text-gray-600">Meet and greet at the hotel. Evening city walk and welcome dinner.</p>
             </div>
-        </section>
+            <div class="day-details bg-white p-6 rounded-lg shadow-lg mb-4 day" id="day2">
+                <h3 class="text-2xl font-bold text-gray-800">Day 2-3: City Highlights</h3>
+                <p class="text-gray-600">Tour of the Petronas Towers, visit to Merdeka Square, and cultural shows.</p>
+            </div>
+            <!-- Día 4-5: Inmersión Cultural -->
+<div class="day-details bg-white p-6 rounded-lg shadow-lg mb-4 day" id="day4">
+    <h3 class="text-2xl font-bold text-gray-800">Day 4-5: Cultural Immersion</h3>
+    <p class="text-gray-600">Spend these days exploring the rich history and art of Kuala Lumpur. Visit the National Museum, participate in a batik painting workshop, and enjoy an evening at the Malaysian Philharmonic Orchestra.</p>
+</div>
+
+<!-- Día 6-7: Natural Wonders -->
+<div class="day-details bg-white p-6 rounded-lg shadow-lg mb-4 day" id="day6">
+    <h3 class="text-2xl font-bold text-gray-800">Day 6-7: Natural Wonders</h3>
+    <p class="text-gray-600">Discover the breathtaking landscapes of Kuala Lumpur with a trip to the Kuala Lumpur Bird Park and a hike in the Bukit Bintang area to see the city's natural flora and fauna.</p>
+</div>
+
+<!-- Día 8-12: Leisure and Exploration -->
+<div class="day-details bg-white p-6 rounded-lg shadow-lg mb-4 day" id="day8">
+    <h3 class="text-2xl font-bold text-gray-800">Day 8-12: Leisure and Exploration</h3>
+    <p class="text-gray-600">These days are reserved for personal leisure and further exploration. Take your time shopping at the Suria KLCC, explore local markets, or enjoy a day trip to nearby attractions such as the Genting Highlands.</p>
+</div>
+
+<!-- Día 13: Farewell -->
+<div class="day-details bg-white p-6 rounded-lg shadow-lg mb-4 day" id="day13">
+    <h3 class="text-2xl font-bold text-gray-800">Day 13: Farewell</h3>
+    <p class="text-gray-600">Join your fellow travelers for a farewell feast at one of Kuala Lumpur's renowned rooftop restaurants, where you'll dine with panoramic views of the city as you reminisce about your journey.</p>
+</div>
+
+<!-- Día 14: Departure -->
+<div class="day-details bg-white p-6 rounded-lg shadow-lg day" id="day14">
+    <h3 class="text-2xl font-bold text-gray-800">Day 14: Departure</h3>
+    <p class="text-gray-600">After a leisurely breakfast, take some time for last-minute shopping or photo opportunities before your transfer to the airport for your departure.</p>
+</div>
+
+        </div>
+    </div>
+</section>
         
         
         
