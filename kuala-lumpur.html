@@ -354,10 +354,21 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer class="bg-white py-6">
-        <div class="container mx-auto text-center">
-            <!-- Información de contacto y enlaces aquí -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <p>&copy; 2024 Real Roads Travel</p>
+            <a href="javascript:void(0);" onclick="scrollToTop();" class="text-blue-500 hover:underline">Volver al Inicio</a>
         </div>
     </footer>
+    
+    <script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    </script>
+    
 </body>
 </html>
